@@ -21,10 +21,9 @@ Lab-4-Intro-a-Javascript/
 │   └── app.js
 ├── README.md
 ├── .gitignore
-└── capturas/
-    ├── 01-home.png
-    ├── 02-crear-mision.png
-    └── 03-succesful-xp.png
+└── Imagenes/
+    ├── Normal.png
+    ├── Legendaria.png
 ```
 
 ## Requirements
