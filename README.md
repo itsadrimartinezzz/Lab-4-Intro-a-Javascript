@@ -81,10 +81,10 @@ http://localhost
 ### Vista principal de la aplicación
 
 ### Normal
-![Normal](capturas/Normal.png)
+![Normal](imagenes/Normal.png)
 
 ### Legendario
-![Legendario](capturas/Legendario.png)
+![Legendario](Imagenes/Legendario.png)
 
 
 ## Video demostrativo
