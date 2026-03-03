@@ -1,19 +1,17 @@
-# Laboratorio #4 — Intro a JavaScript
+# Lab #4 — Intro to JavaScript
 
-## Descripción
-Este laboratorio consiste en crear **disci-app**, una aplicación de gamification para reforzar hábitos usando un sistema de **misiones** y **recompensas** (XP). 
-La idea es que el usuario cree misiones (hábitos), las complete y vaya acumulando XP global para subir de categoría.
+## Description
+This lab consists of building **disci-app**, a gamification app to reinforce habits using a **missions** and **rewards (XP)** system.  
+The idea is that the user creates missions (habits), completes them, and keeps accumulating global XP to level up into a higher category.
 
-## Tecnologías
+## Technologies
 - HTML
 - CSS
-- JavaScript (Vanilla)
+- JavaScript
 
-**Importante:** No se usan librerías, frameworks, ni dependencias externas. Todo es **HTML/CSS/JS puro**.
+## Project structure
 
-## Estructura del proyecto
-
-El código fuente se encuentra dentro del directorio `app/`:
+The source code is located inside the `app/` directory:
 
 ```text
 Lab-4-Intro-a-Javascript/
@@ -29,65 +27,58 @@ Lab-4-Intro-a-Javascript/
     └── 03-succesful-xp.png
 ```
 
-## Requisitos del laboratorio (Checklist)
+## Requirements
 
-- Crear cada misión con: nombre, descripción, dificultad
-- XP por dificultad:
-  - Fácil: 10 XP
+- Create each mission with: name, description, difficulty
+- XP per difficulty:
+  - Easy: 10 XP
   - Normal: 25 XP
-  - Difícil: 50 XP
-- XP global = suma de todas las misiones terminadas
-- 3 categorías según el XP global del usuario
-- `console.log` por cada misión creada para validar estructura
-- Mostrar misiones en una lista legible
-- El usuario puede marcar una misión como terminada y queda con estado "SUCCESFUL"
-- (Opcional) Montaje en nginx para correr desde servidor local
+  - Hard: 50 XP
+- Global XP = sum of all completed missions
+- 3 categories based on the user's global XP
+- Show missions in a readable list
+- The user can mark a mission as completed and it stays with the status **"SUCCESFUL"**
 
-## Cómo ejecutar la app (Local)
+## How to run the app — Local
 
-### Opción 1: Abrir el HTML directamente
+### Option 1: Open the HTML directly
+1. Open the file `app/index.html` in any web browser.
 
-1. Abrir el archivo `app/index.html` en cualquier navegador web.
+### Option 2: Live Server — VS Code
+1. Open the project folder in VS Code.
+2. Right-click on `app/index.html`.
+3. Select **Open with Live Server**.
 
-### Opción 2: Live Server (VS Code)
+## Deploying on nginx
 
-1. Abrir la carpeta del proyecto en VS Code.
-2. Click derecho en `app/index.html`.
-3. Seleccionar **Open with Live Server**.
-
-## Montaje en nginx
-
-1. Copiar contenido a la carpeta web:
+1. Copy the content to the web folder:
 
 ```bash
 sudo rm -rf /var/www/html/*
 sudo cp -r app/* /var/www/html/
 ```
 
-2. Reiniciar nginx:
+2. Restart nginx:
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-3. Abrir en el navegador:
+3. Open in the browser:
 
 ```text
 http://localhost
 ```
 
-## Capturas de pantalla
+## Screenshots
 
-### Vista principal de la aplicación
+### Main view of the application
 
 ### Normal
-![Normal](imagenes/Normal.png)
+![Normal](Imagenes/Normal.png)
 
-### Legendario
+### Legendary
 ![Legendario](Imagenes/Legendario.png)
 
-
-## Video demostrativo
-
+## Video
 https://www.canva.com/design/DAHC3m51z1g/k-yeJrdRbjdl4cpaz5yNlw/edit?utm_content=DAHC3m51z1g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-
