@@ -80,7 +80,11 @@ http://localhost
 
 ### Vista principal de la aplicación
 
-![Vista principal](capturas/Normla.png)
+### Normal
+![Normal](capturas/Normal.png)
+
+### Legendario
+![Legendario](capturas/Legendario.png)
 
 
 ## Video demostrativo
